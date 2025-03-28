@@ -34,7 +34,7 @@ mvn spring-boot:run
 ## 📌 Endpoints da API
 
 ### 📌 Criar uma nova tarefa
-**POST** `/tarefas`
+**POST** `/todos/add`
 ```json
 {
   "titulo": "Tomar água",
@@ -53,7 +53,7 @@ mvn spring-boot:run
 ```
 
 ### 📌 Listar todas as tarefas
-**GET** `/tarefas`
+**GET** `/todos/list`
 ✅ **Resposta:** `200 OK`
 ```json
 [
@@ -67,7 +67,7 @@ mvn spring-boot:run
 ```
 
 ### 📌 Concluir uma tarefa
-**PATCH** `/tarefas/{id}/concluir`
+**PATCH** `/todos/{id}/done`
 ✅ **Resposta:** `200 OK`
 ```json
 {
@@ -78,7 +78,7 @@ mvn spring-boot:run
 ```
 
 ### 📌 Reabrir uma tarefa
-**PATCH** `/tarefas/{id}/reabrir`
+**PATCH** `/todos/{id}/reopen`
 ✅ **Resposta:** `200 OK`
 ```json
 {
@@ -89,7 +89,7 @@ mvn spring-boot:run
 ```
 
 ### 📌 Excluir uma tarefa
-**DELETE** `/tarefas/{id}`
+**DELETE** `/todos/{id}`
 ✅ **Resposta:** `204 No Content`
 
 ## 🛠️ Melhorias Futuras
